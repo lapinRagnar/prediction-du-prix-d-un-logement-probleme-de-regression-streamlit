@@ -65,7 +65,8 @@ elif page == pages[2]:
     st.plotly_chart(fig2)
     
     fig3, ax = plt.subplots()
-    sns.heatmap(df.corr(), ax=ax)
+    numeric_columns = df.select_dtypes(include=[np.number])
+    sns.heatmap(numeric_columns.corr(), ax=ax)
     plt.title("Matrice de corrélation des variables du dataframe")
     st.write(fig3)
 

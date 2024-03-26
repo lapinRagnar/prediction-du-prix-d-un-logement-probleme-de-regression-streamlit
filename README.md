@@ -20,6 +20,11 @@ pip install pandas numpy streamlit seaborn matplotlib plotly  joblib
 pip install -U scikit-learn
 ```
 
+### pour lancer streamlit
+```
+streamlit run "nom de mon fichier .py"
+streamlit run streamlit_immobilier.py 
+```
 
 # le lien du tuto
 https://www.youtube.com/watch?v=REQzcp0q1FU&t=1196s
